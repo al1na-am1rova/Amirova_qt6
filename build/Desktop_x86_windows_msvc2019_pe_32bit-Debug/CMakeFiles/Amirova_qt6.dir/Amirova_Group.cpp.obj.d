@@ -1225,6 +1225,11 @@ C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QPushButton
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qpushbutton.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractbutton.h
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/QPainter
+C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.h
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow
+C:/Qt/6.8.0/msvc2022_64/include/QtCore/QObject
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget
+C:/Qt/6.8.0/msvc2022_64/include/QtCore/QString
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/QPainter
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/QWindow
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindow.h

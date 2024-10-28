@@ -2,6 +2,7 @@ C:/Amirova_lab3_OPP/Amirova_qt6/build/Desktop_x86_windows_msvc2019_pe_32bit-Debu
   C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_Actor.h \
   C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_Group.h \
   C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_TheaterActor.h \
+  C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.h \
   C:/Amirova_lab3_OPP/Amirova_qt6/framework.h \
   C:/Amirova_lab3_OPP/Amirova_qt6/mainwindow.h \
   C:/Amirova_lab3_OPP/BOOST/boost_1_86_0/boost/aligned_storage.hpp \
@@ -411,6 +412,8 @@ C:/Amirova_lab3_OPP/Amirova_qt6/build/Desktop_x86_windows_msvc2019_pe_32bit-Debu
   C:/Amirova_lab3_OPP/BOOST/boost_1_86_0/boost/type_traits/type_with_alignment.hpp \
   C:/Amirova_lab3_OPP/BOOST/boost_1_86_0/boost/utility/enable_if.hpp \
   C:/Amirova_lab3_OPP/BOOST/boost_1_86_0/boost/version.hpp \
+  C:/Qt/6.8.0/msvc2022_64/include/QtCore/QObject \
+  C:/Qt/6.8.0/msvc2022_64/include/QtCore/QString \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20memory.h \
@@ -562,6 +565,7 @@ C:/Amirova_lab3_OPP/Amirova_qt6/build/Desktop_x86_windows_msvc2019_pe_32bit-Debu
   C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qpushbutton.h \

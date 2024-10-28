@@ -1182,6 +1182,7 @@ C:/Qt/6.8.0/msvc2022_64/include/QtGui/qfont.h
 C:/Qt/6.8.0/msvc2022_64/include/QtCore/qendian.h
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/qfontmetrics.h
 C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_TheaterActor.h
+C:/Qt/6.8.0/msvc2022_64/include/QtCore/QString
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmainwindow.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
@@ -1225,6 +1226,10 @@ C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QPushButton
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qpushbutton.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractbutton.h
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/QPainter
+C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.h
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow
+C:/Qt/6.8.0/msvc2022_64/include/QtCore/QObject
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget
 C:/Amirova_lab3_OPP/Amirova_qt6/utils.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QApplication
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qapplication.h

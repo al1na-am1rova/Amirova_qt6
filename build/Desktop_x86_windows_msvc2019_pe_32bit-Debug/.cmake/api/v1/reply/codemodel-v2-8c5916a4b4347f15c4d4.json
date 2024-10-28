@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-74f3537dfc6f640c822e.json",
+					"jsonFile" : "directory-.-Debug-2dc16e7f67ffedd16e88.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Amirova_qt6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Amirova_qt6-Debug-3b5ef52c0a5d21fd1661.json",
+					"jsonFile" : "target-Amirova_qt6-Debug-936be7d3d8cce1b346d9.json",
 					"name" : "Amirova_qt6",
 					"projectIndex" : 0
 				},

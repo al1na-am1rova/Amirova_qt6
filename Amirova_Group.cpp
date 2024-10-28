@@ -80,7 +80,7 @@ void Amirova_Group::save_to_file()
 
 }
 
-void Amirova_Group::load_from_file()
+void Amirova_Group::load_from_file(QString LoadFileName)
 {
     //string filename;
     //cout << "Введите название файла:" << endl;
@@ -89,7 +89,7 @@ void Amirova_Group::load_from_file()
     // getline(cin, filename);
     ifstream fin;
     //fin.open(filename, ios::in);
-    fin.open("C:/Amirova_lab3_OPP/Amirova_qt6/1.txt", ios::in);
+    fin.open(LoadFileName.toStdWString(), ios::in);
 
 	if (fin.is_open()) {
 		boost::archive::text_iarchive load(fin, archive_flags::no_header);

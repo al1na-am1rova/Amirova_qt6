@@ -302,6 +302,12 @@
 			null
 		],
 		[
+			"C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.h",
+			"MU",
+			"EWIEGA46WW/moc_MyWidget.cpp",
+			null
+		],
+		[
 			"C:/Amirova_lab3_OPP/Amirova_qt6/framework.h",
 			"MU",
 			"EWIEGA46WW/moc_framework.cpp",
@@ -384,6 +390,7 @@
 			"MU",
 			null
 		],
+		[ "C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.cpp", "MU", null ],
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/main.cpp", "MU", null ],
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/mainwindow.cpp", "MU", null ]
 	],

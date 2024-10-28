@@ -42,6 +42,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Amirova_TheaterActor.h
         utils.h
         Amirova_OPP_lab1.cpp
+        MyWidget.h MyWidget.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Amirova_qt6 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -51,6 +52,7 @@ else()
     if(ANDROID)
         add_library(Amirova_qt6 SHARED
             ${PROJECT_SOURCES}
+
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")

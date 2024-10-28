@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Amirova_qt6.dir/Amirova_TheaterActor.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/Amirova_qt6_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/Amirova_qt6.dir/Amirova_qt6_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/Amirova_qt6.dir/MyWidget.cpp.obj"
+  "CMakeFiles/Amirova_qt6.dir/MyWidget.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/main.cpp.obj"
   "CMakeFiles/Amirova_qt6.dir/main.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/mainwindow.cpp.obj"
