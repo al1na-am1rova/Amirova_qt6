@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+055bf1eb063aa24c9bbeee0dbcc3761d Amirova_qt6_autogen/timestamp
+997933c9a3b3045083e3c6369a0da472 CMakeFiles/Amirova_qt6_autogen
