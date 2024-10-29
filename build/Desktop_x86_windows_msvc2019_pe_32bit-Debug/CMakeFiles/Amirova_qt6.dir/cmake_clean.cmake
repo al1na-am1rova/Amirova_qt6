@@ -12,8 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Amirova_qt6.dir/Amirova_Actor.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/Amirova_Group.cpp.obj"
   "CMakeFiles/Amirova_qt6.dir/Amirova_Group.cpp.obj.d"
-  "CMakeFiles/Amirova_qt6.dir/Amirova_OPP_lab1.cpp.obj"
-  "CMakeFiles/Amirova_qt6.dir/Amirova_OPP_lab1.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/Amirova_TheaterActor.cpp.obj"
   "CMakeFiles/Amirova_qt6.dir/Amirova_TheaterActor.cpp.obj.d"
   "CMakeFiles/Amirova_qt6.dir/Amirova_qt6_autogen/mocs_compilation.cpp.obj"

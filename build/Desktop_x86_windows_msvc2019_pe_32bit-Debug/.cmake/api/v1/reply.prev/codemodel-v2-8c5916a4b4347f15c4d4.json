@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2dc16e7f67ffedd16e88.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Amirova_qt6",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Amirova_qt6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Amirova_qt6-Debug-936be7d3d8cce1b346d9.json",
+					"name" : "Amirova_qt6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Amirova_qt6_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Amirova_qt6_autogen-Debug-ff7629acb0171b0a8fca.json",
+					"name" : "Amirova_qt6_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Amirova_qt6_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Amirova_qt6_autogen_timestamp_deps-Debug-f97f19e2913b08b69c16.json",
+					"name" : "Amirova_qt6_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Amirova_lab3_OPP/Amirova_qt6/build/Desktop_x86_windows_msvc2019_pe_32bit-Debug",
+		"source" : "C:/Amirova_lab3_OPP/Amirova_qt6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

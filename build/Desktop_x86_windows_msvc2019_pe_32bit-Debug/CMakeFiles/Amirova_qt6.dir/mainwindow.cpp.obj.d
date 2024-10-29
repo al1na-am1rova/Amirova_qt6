@@ -1256,9 +1256,6 @@ C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QScrollArea
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qscrollarea.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractscrollarea.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qframe.h
-C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QScrollBar
-C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qscrollbar.h
-C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractslider.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QStatusBar
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qstatusbar.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget

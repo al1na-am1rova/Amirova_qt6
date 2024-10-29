@@ -82,25 +82,16 @@ void Amirova_Group::save_to_file()
 
 void Amirova_Group::load_from_file(QString LoadFileName)
 {
-    //string filename;
-    //cout << "Введите название файла:" << endl;
- //    cout << "enter file name:" << endl;
-    // cin.ignore();
-    // getline(cin, filename);
     ifstream fin;
-    //fin.open(filename, ios::in);
     fin.open(LoadFileName.toStdWString(), ios::in);
 
 	if (fin.is_open()) {
 		boost::archive::text_iarchive load(fin, archive_flags::no_header);
 		load >> actors;
-        //cout << "Данные успешно считаны из файла" << endl;
-        //cout << "data loaded from file" << endl;
-
 	}
 
 	else {
-        //cout << "При считывании данных произошла ошибка. Возможно, такого файла не существует" << endl;
+
         cout << "error" << endl;
 	}
 }
@@ -109,8 +100,7 @@ vector<int> Amirova_Group::count_str_len(vector<QString> header, int sideSpace) 
 
     // ищем ширину полей заголовка таблички
     vector<int> strLen(8);
-    for (int i = 0; i < 8; ++i)
-        strLen[i] = header[i].size();
+    for (int i = 0; i < 8; ++i) strLen[i] = header[i].size();
 
     // ищем ширину (длину строк) полей каждого объекта
     // ищем максимальную длину строки для каждого поля среди всех объектов и заголовка и записываем её в strLen
