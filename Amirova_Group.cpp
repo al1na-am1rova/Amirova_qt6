@@ -43,40 +43,18 @@ void Amirova_Group::show_all_actors()
 
 void Amirova_Group::clear_all() {
 	actors.clear();
-    //cout << "Список актеров очищен" << endl;
-    cout << "clear" << endl;
 }
 
-void Amirova_Group::save_to_file()
+void Amirova_Group::save_to_file(QString SaveFileName)
 {
-	if (actors.size() == 0) {
-        //cout << "Нет данных для сохранения" << endl;
-        cout << "no data to save" << endl;
-	}
-	else {
-		string filename;
-        //cout << "Введите название файла:" << endl;
-        cout << "enter file name:" << endl;
-		cin.ignore();
-		getline(cin, filename);
+    ofstream fout;
+    fout.open(SaveFileName.toStdWString(), ios::out);
 
-		ofstream fout;
-		fout.open(filename, ios::out);
+    if (fout.is_open()) {
 
-		if (fout.is_open()) {
-
-			boost::archive::text_oarchive write(fout, archive_flags::no_header);
-			write << actors;
-
-            //cout << "Данные успешно сохранены в файл" << endl;
-            cout << "data saved to file" << endl;
-		}
-
-		else {
-            //cout << "При сохранении возникла ошибка. Возможно, такого файла не существует" << endl;
-            cout << "error" << endl;
-		}
-	}
+        boost::archive::text_oarchive write(fout, archive_flags::no_header);
+        write << actors;
+    }
 
 }
 
@@ -88,11 +66,6 @@ void Amirova_Group::load_from_file(QString LoadFileName)
 	if (fin.is_open()) {
 		boost::archive::text_iarchive load(fin, archive_flags::no_header);
 		load >> actors;
-	}
-
-	else {
-
-        cout << "error" << endl;
 	}
 }
 

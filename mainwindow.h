@@ -21,17 +21,20 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QString LoadFileName;
+    QString SaveFileName;
 
 private slots:
-    void on_load_from_file_button_clicked();
-    //void paintEvent(QPaintEvent *event);
+    void on_load_from_file_triggered();
+    void on_clean_data_triggered();
+    void on_save_to_file_triggered();
 
 private:
     Ui::MainWindow *ui;
-    // MyWidget my_widget;
-    // MyWidget *myWidget = new MyWidget(this);
-    bool show_table = false;
-    QString LoadFileName;
+    //Amirova_Group group;
+    //bool show_table = false;
+protected:
+    void resizeEvent(QResizeEvent *event) override;
 };
 
 // #endif // MAINWINDOW_H

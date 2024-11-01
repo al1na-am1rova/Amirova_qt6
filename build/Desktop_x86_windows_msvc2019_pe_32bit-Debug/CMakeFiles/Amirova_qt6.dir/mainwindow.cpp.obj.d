@@ -1232,6 +1232,7 @@ C:/Qt/6.8.0/msvc2022_64/include/QtCore/QObject
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget
 C:/Amirova_lab3_OPP/Amirova_qt6/build/Desktop_x86_windows_msvc2019_pe_32bit-Debug/Amirova_qt6_autogen/include/./ui_mainwindow.h
 C:/Qt/6.8.0/msvc2022_64/include/QtCore/QVariant
+C:/Qt/6.8.0/msvc2022_64/include/QtGui/QAction
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QApplication
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qapplication.h
 C:/Qt/6.8.0/msvc2022_64/include/QtCore/qcoreapplication.h
@@ -1248,10 +1249,10 @@ C:/Qt/6.8.0/msvc2022_64/include/QtCore/qlocale.h
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/qguiapplication_platform.h
 C:/Qt/6.8.0/msvc2022_64/include/QtGui/qguiapplication.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMenu
+C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmenu.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMenuBar
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmenubar.h
-C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmenu.h
-C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QPushButton
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QScrollArea
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qscrollarea.h
 C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qabstractscrollarea.h
