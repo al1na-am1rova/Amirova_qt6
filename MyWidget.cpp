@@ -90,6 +90,7 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
         top += lineHeight;
         point.setX(startX);
         point.setY(top);
+
         std::for_each(actors.begin(), actors.end(), std::bind(&Amirova_Actor::show_actor_on_screen,std::placeholders::_1,ref(painter), ref(point), strLen, lineHeight, startX, multiplier));
 
         // Устанавливаем минимальные размеры виджета
@@ -118,8 +119,20 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
      }
  }
 
+ // void MyWidget::onSetWidth(int w)
+ // {
+ //     resize(w, height());
+ // }
+
+ // void MyWidget::onSetHeight(int h)
+ // {
+ //     resize(width(), h);
+ // }
+
+
  void MyWidget::clean()
  {
+     setMinimumSize(0,0);
      actors.clear();
      update();
  }

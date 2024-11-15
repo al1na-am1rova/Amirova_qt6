@@ -497,7 +497,7 @@
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
-     <width>808</width>
+     <width>0</width>
      <height>0</height>
     </size>
    </property>
@@ -995,10 +995,10 @@
      <enum>QFrame::Shape::StyledPanel</enum>
     </property>
     <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
     </property>
     <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
     </property>
     <property name="sizeAdjustPolicy">
      <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
@@ -1011,8 +1011,8 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>1182</width>
-       <height>572</height>
+       <width>1199</width>
+       <height>589</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -1038,12 +1038,13 @@
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>таблица</string>
+     <string>файл</string>
     </property>
-    <addaction name="separator"/>
     <addaction name="load_from_file"/>
     <addaction name="save_to_file"/>
     <addaction name="clean_data"/>
+    <addaction name="separator"/>
+    <addaction name="edit"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -1070,6 +1071,11 @@
    </property>
    <property name="text">
     <string>очистить таблицу</string>
+   </property>
+  </action>
+  <action name="edit">
+   <property name="text">
+    <string>редактировать</string>
    </property>
   </action>
  </widget>

@@ -48,3 +48,7 @@ void Amirova_TheaterActor::show_actor_on_screen(QPainter&  painter, QPoint& poin
     point.setY(point.y() + lineHeigth);
 
 }
+
+string Amirova_TheaterActor::get_type(){
+    return "theater_actor";
+}

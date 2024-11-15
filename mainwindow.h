@@ -2,11 +2,11 @@
 // #define MAINWINDOW_H
 
 #pragma once
-#include "Amirova_Group.h"
 #include <QMainWindow>
 #include <QPushButton>
 #include <QPainter>
-#include "MyWidget.h"
+#include "editdialog.h"
+#include "C:\Amirova_lab3_OPP\Amirova_qt6\MyWidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -28,13 +28,10 @@ private slots:
     void on_load_from_file_triggered();
     void on_clean_data_triggered();
     void on_save_to_file_triggered();
+    void on_edit_triggered();
 
 private:
     Ui::MainWindow *ui;
-    //Amirova_Group group;
-    //bool show_table = false;
 protected:
     void resizeEvent(QResizeEvent *event) override;
 };
-
-// #endif // MAINWINDOW_H

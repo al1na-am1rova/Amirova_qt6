@@ -9,10 +9,10 @@ class Amirova_TheaterActor :
 friend class boost::serialization::access;
 private:
 
-    string theater_name;
-    int experience;
 
 public:
+    string theater_name;
+    int experience;
 
 	BOOST_SERIALIZATION_SPLIT_MEMBER()
 
@@ -23,6 +23,7 @@ public:
 	void show(ostream& out) override;
     vector<int> get_fields_length() override;
     void show_actor_on_screen(QPainter& painter, QPoint& point, vector<int> strLen, int lineHeight, int startX, int multiplier) override;
+    string get_type() override;
 
 
 	template<class Archive>

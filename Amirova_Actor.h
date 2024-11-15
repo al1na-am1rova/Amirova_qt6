@@ -7,17 +7,20 @@ class Amirova_Actor
 	friend class boost::serialization::access;
 
 protected:
-	string name;
-	int birth_year;
-	string gender;
-	double height; 
-	bool is_able_to_sing;
-	string city;
+
 public:
+    string name;
+    int birth_year;
+    string gender;
+    double height;
+    bool is_able_to_sing;
+    string city;
+
     virtual vector<int> get_fields_length();
 	friend string get_correct_gender();
 
 	virtual void create(istream& in);
+    virtual string get_type();
 	virtual void show(ostream& out);
     virtual void show_actor_on_screen(QPainter& painter, QPoint& point, vector<int> strLen, int lineHeight, int startX, int multiplier);
 

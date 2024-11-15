@@ -1,15 +1,14 @@
 #pragma once
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "Amirova_Group.h"
-#include "Amirova_Actor.h"
 #include <QPainter>
 #include <QWidget>
 #include <QDebug>
+#include "editdialog.h"
 #include <QScrollArea>
-#include <QLayout>
+#include <sstream>
+//#include <QLayout>
 #include <QFileDialog>
-
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -45,5 +44,38 @@ void MainWindow::on_clean_data_triggered() {
 
     ui -> MyNewWidget -> clean();
     LoadFileName = "";
+
+}
+
+template<class T>
+void clone(T& src, T& trg)
+{
+    std::stringstream stream;
+    boost::archive::binary_oarchive out(stream);
+    boost::archive::binary_iarchive in(stream);
+    out << src;
+    in >> trg;
+}
+
+
+void MainWindow::on_edit_triggered() {
+    std::cout << ("EditDialog_open");
+    std::vector<shared_ptr<Amirova_Actor>> actors;
+    clone(ui->MyNewWidget->actors, actors);
+    EditDialog* dlg = new EditDialog(this, {actors, ui->MyNewWidget->width(), ui->MyNewWidget->height()});
+    dlg->show();
+    //delete dlg;
+
+
+    //connect(&dlg, &EditDialog::setLabels, ui->myWidget, &MyWidget::onSetLabels);
+    // connect(&dlg, &EditDialog::setWidth, ui->MyNewWidget, &MyWidget::onSetWidth);
+    // connect(&dlg, &EditDialog::setHeight, ui->MyNewWidget, &MyWidget::onSetHeight);
+
+    if (dlg -> exec() == QDialog::Accepted)
+    {
+        clone(actors, ui->MyNewWidget->actors);
+        ui->MyNewWidget->update();
+        delete dlg;
+    }
 
 }

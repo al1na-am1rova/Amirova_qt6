@@ -94,3 +94,7 @@ void Amirova_Actor::show_actor_on_screen(QPainter& painter, QPoint& point, vecto
     point.setX(startX);
     point.setY(point.y() + lineHeigth);
 }
+
+string Amirova_Actor::get_type(){
+    return "actor";
+}
