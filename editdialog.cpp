@@ -1,5 +1,6 @@
 #include "editdialog.h"
 #include "ui_editdialog.h"
+#include <sstream>
 
 EditDialog::EditDialog(QWidget *parent,const Data& data)
     : QDialog(parent)
@@ -90,11 +91,17 @@ void EditDialog::updateControls()
         ui->city_line->setText(QString::fromLocal8Bit(current_actor->city));
         if (current_actor -> get_type() == "theater_actor") {
 
-            ui->theater_label->setVisible(show);
-            ui->experience_label->setVisible(show);
+            // ui->theater_label->setVisible(show);
+            // ui->experience_label->setVisible(show);
 
-            ui->theater_line->setVisible(show);
-            ui->experience_line->setVisible(show);
+            // ui->theater_line->setVisible(show);
+            // ui->experience_line->setVisible(show);
+
+            ui->theater_label->setEnabled(show);
+            ui->experience_label->setEnabled(show);
+
+            ui->theater_line->setEnabled(show);
+            ui->experience_line->setEnabled(show);
 
             // ui->theater_line->setText(QString::fromLocal8Bit(current_actor->theater_name));
             // ui->experience_line->setText(QString::fromLocal8Bit(current_actor->experience));
@@ -102,11 +109,17 @@ void EditDialog::updateControls()
 
         else {
 
-            ui->theater_label->setVisible(false);
-            ui->experience_label->setVisible(false);
+            // ui->theater_label->setVisible(false);
+            // ui->experience_label->setVisible(false);
 
-            ui->theater_line->setVisible(false);
-            ui->experience_line->setVisible(false);
+            // ui->theater_line->setVisible(false);
+            // ui->experience_line->setVisible(false);
+
+            ui->theater_label->setEnabled(false);
+            ui->experience_label->setEnabled(false);
+
+            ui->theater_line->setEnabled(false);
+            ui->experience_line->setEnabled(false);
         }
     }
 
@@ -129,19 +142,33 @@ void EditDialog::updateControls()
     }
 
 
-    ui->name_label->setVisible(show);
-    ui->year_label->setVisible(show);
-    ui->gender_label->setVisible(show);
-    ui->height_label->setVisible(show);
-    ui->sing_label->setVisible(show);
-    ui->city_label->setVisible(show);
+    // ui->name_label->setVisible(show);
+    // ui->year_label->setVisible(show);
+    // ui->gender_label->setVisible(show);
+    // ui->height_label->setVisible(show);
+    // ui->sing_label->setVisible(show);
+    // ui->city_label->setVisible(show);
 
-    ui->name_line->setVisible(show);
-    ui->year_line->setVisible(show);
-    ui->gender_line->setVisible(show);
-    ui->height_line->setVisible(show);
-    ui->sing_line->setVisible(show);
-    ui->city_line->setVisible(show);
+    // ui->name_line->setVisible(show);
+    // ui->year_line->setVisible(show);
+    // ui->gender_line->setVisible(show);
+    // ui->height_line->setVisible(show);
+    // ui->sing_line->setVisible(show);
+    // ui->city_line->setVisible(show);
+
+    ui->name_label->setEnabled(show);
+    ui->year_label->setEnabled(show);
+    ui->gender_label->setEnabled(show);
+    ui->height_label->setEnabled(show);
+    ui->sing_label->setEnabled(show);
+    ui->city_label->setEnabled(show);
+
+    ui->name_line->setEnabled(show);
+    ui->year_line->setEnabled(show);
+    ui->gender_line->setEnabled(show);
+    ui->height_line->setEnabled(show);
+    ui->sing_line->setEnabled(show);
+    ui->city_line->setEnabled(show);
 
     ui->edit_button->setEnabled(show);
     ui->delete_button->setEnabled(show);
@@ -161,7 +188,15 @@ void EditDialog::updateControls()
 //     emit setHeight(value);
 // }
 
-
+// template<class T>
+// void clone(T& src, T& trg)
+// {
+//     std::stringstream stream;
+//     boost::archive::binary_oarchive out(stream);
+//     boost::archive::binary_iarchive in(stream);
+//     out << src;
+//     in >> trg;
+// }
 
 void EditDialog::on_close_button_clicked()
 {
@@ -171,6 +206,25 @@ void EditDialog::on_close_button_clicked()
 
 void EditDialog::on_add_button_clicked()
 {
+
+   AddDialog* add_dlg = new AddDialog(this);
+   add_dlg->show();
+
+    if (add_dlg -> exec() == QDialog::Accepted)
+     {
+        // if (!add_dlg->is_theater_actor) {
+        //     shared_ptr<Amirova_Actor> new_actor = make_shared<Amirova_Actor>();
+        //     new_actor = add_dlg->actor;
+        //     data.actors.insert(data.actors.end(), new_actor);
+        // }
+        // else {
+        //     shared_ptr<Amirova_TheaterActor> new_theater_actor = make_shared<Amirova_TheaterActor>();
+        //     new_theater_actor = add_dlg->theater_actor;
+        //     data.actors.insert(data.actors.end(), new_theater_actor);
+        // }
+        updateControls();
+        delete add_dlg;
+    }
 
 }
 

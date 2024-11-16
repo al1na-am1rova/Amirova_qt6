@@ -36,12 +36,14 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         framework.h
         Amirova_Actor.cpp
         Amirova_Actor.h
-        Amirova_Group.cpp
-        Amirova_Group.h
+        #Amirova_Group.cpp
+        #Amirova_Group.h
         Amirova_TheaterActor.cpp
         Amirova_TheaterActor.h
-        utils.h
+        #utils.h
         MyWidget.h MyWidget.cpp
+        editdialog.h editdialog.cpp editdialog.ui
+        adddialog.h adddialog.cpp adddialog.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Amirova_qt6 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

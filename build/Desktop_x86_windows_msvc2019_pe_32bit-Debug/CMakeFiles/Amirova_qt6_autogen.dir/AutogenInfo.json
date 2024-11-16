@@ -290,12 +290,6 @@
 			null
 		],
 		[
-			"C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_Group.h",
-			"MU",
-			"EWIEGA46WW/moc_Amirova_Group.cpp",
-			null
-		],
-		[
 			"C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_TheaterActor.h",
 			"MU",
 			"EWIEGA46WW/moc_Amirova_TheaterActor.cpp",
@@ -308,6 +302,12 @@
 			null
 		],
 		[
+			"C:/Amirova_lab3_OPP/Amirova_qt6/editdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_editdialog.cpp",
+			null
+		],
+		[
 			"C:/Amirova_lab3_OPP/Amirova_qt6/framework.h",
 			"MU",
 			"EWIEGA46WW/moc_framework.cpp",
@@ -317,12 +317,6 @@
 			"C:/Amirova_lab3_OPP/Amirova_qt6/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"C:/Amirova_lab3_OPP/Amirova_qt6/utils.h",
-			"MU",
-			"EWIEGA46WW/moc_utils.cpp",
 			null
 		]
 	],
@@ -383,13 +377,13 @@
 	"SOURCES" : 
 	[
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_Actor.cpp", "MU", null ],
-		[ "C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_Group.cpp", "MU", null ],
 		[
 			"C:/Amirova_lab3_OPP/Amirova_qt6/Amirova_TheaterActor.cpp",
 			"MU",
 			null
 		],
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/MyWidget.cpp", "MU", null ],
+		[ "C:/Amirova_lab3_OPP/Amirova_qt6/editdialog.cpp", "MU", null ],
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/main.cpp", "MU", null ],
 		[ "C:/Amirova_lab3_OPP/Amirova_qt6/mainwindow.cpp", "MU", null ]
 	],

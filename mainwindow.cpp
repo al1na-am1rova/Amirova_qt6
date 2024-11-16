@@ -30,6 +30,7 @@ void MainWindow:: resizeEvent(QResizeEvent *event) {
 
 void MainWindow::on_load_from_file_triggered() {
 
+    //std::cout << "ff" << flush;
     LoadFileName = QFileDialog::getOpenFileName(this, tr("Открыть"), QDir::currentPath(), tr("Текст (*.txt)"));
     ui -> MyNewWidget -> load_from_file(LoadFileName);
     update();
@@ -59,17 +60,11 @@ void clone(T& src, T& trg)
 
 
 void MainWindow::on_edit_triggered() {
-    std::cout << ("EditDialog_open");
+
     std::vector<shared_ptr<Amirova_Actor>> actors;
     clone(ui->MyNewWidget->actors, actors);
     EditDialog* dlg = new EditDialog(this, {actors, ui->MyNewWidget->width(), ui->MyNewWidget->height()});
     dlg->show();
-    //delete dlg;
-
-
-    //connect(&dlg, &EditDialog::setLabels, ui->myWidget, &MyWidget::onSetLabels);
-    // connect(&dlg, &EditDialog::setWidth, ui->MyNewWidget, &MyWidget::onSetWidth);
-    // connect(&dlg, &EditDialog::setHeight, ui->MyNewWidget, &MyWidget::onSetHeight);
 
     if (dlg -> exec() == QDialog::Accepted)
     {

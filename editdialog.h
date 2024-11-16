@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "Amirova_Actor.h"
 #include "Amirova_TheaterActor.h"
+#include "adddialog.h"
 
 namespace Ui {
 class EditDialog;
@@ -24,6 +25,8 @@ public:
 
     explicit EditDialog(QWidget *parent,const Data &data);
     ~EditDialog();
+
+    bool is_new_actor_theater_actor;
 
 private:
     Ui::EditDialog *ui;

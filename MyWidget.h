@@ -27,8 +27,6 @@ public:
     void save_to_file(QString SaveFileName);
     void clean();
     vector<int> count_str_len(vector<QString> header, int sideSpace);
-    // void onSetWidth(int);
-    // void onSetHeight(int);
 
 private:
 

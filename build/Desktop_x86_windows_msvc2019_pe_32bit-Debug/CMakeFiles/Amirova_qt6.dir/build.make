@@ -145,30 +145,10 @@ CMakeFiles\Amirova_qt6.dir\Amirova_Actor.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Amirova_qt6.dir\Amirova_Actor.cpp.s /c C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_Actor.cpp
 <<
 
-CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj: CMakeFiles\Amirova_qt6.dir\flags.make
-CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj: C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_Group.cpp
-CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj: CMakeFiles\Amirova_qt6.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Amirova_qt6.dir/Amirova_Group.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj.d --working-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj /FdCMakeFiles\Amirova_qt6.dir\ /FS -c C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_Group.cpp
-<<
-
-CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Amirova_qt6.dir/Amirova_Group.cpp.i"
-	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe > CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_Group.cpp
-<<
-
-CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Amirova_qt6.dir/Amirova_Group.cpp.s"
-	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.s /c C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_Group.cpp
-<<
-
 CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj: CMakeFiles\Amirova_qt6.dir\flags.make
 CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj: C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_TheaterActor.cpp
 CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj: CMakeFiles\Amirova_qt6.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Amirova_qt6.dir/Amirova_TheaterActor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Amirova_qt6.dir/Amirova_TheaterActor.cpp.obj"
 	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj.d --working-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj /FdCMakeFiles\Amirova_qt6.dir\ /FS -c C:\Amirova_lab3_OPP\Amirova_qt6\Amirova_TheaterActor.cpp
 <<
@@ -188,7 +168,7 @@ CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.s: cmake_force
 CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj: CMakeFiles\Amirova_qt6.dir\flags.make
 CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj: C:\Amirova_lab3_OPP\Amirova_qt6\MyWidget.cpp
 CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj: CMakeFiles\Amirova_qt6.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Amirova_qt6.dir/MyWidget.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Amirova_qt6.dir/MyWidget.cpp.obj"
 	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj.d --working-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj /FdCMakeFiles\Amirova_qt6.dir\ /FS -c C:\Amirova_lab3_OPP\Amirova_qt6\MyWidget.cpp
 <<
@@ -205,15 +185,35 @@ CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Amirova_qt6.dir\MyWidget.cpp.s /c C:\Amirova_lab3_OPP\Amirova_qt6\MyWidget.cpp
 <<
 
+CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj: CMakeFiles\Amirova_qt6.dir\flags.make
+CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj: C:\Amirova_lab3_OPP\Amirova_qt6\editdialog.cpp
+CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj: CMakeFiles\Amirova_qt6.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Amirova_qt6.dir/editdialog.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj.d --working-dir=C:\Amirova_lab3_OPP\Amirova_qt6\build\Desktop_x86_windows_msvc2019_pe_32bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj /FdCMakeFiles\Amirova_qt6.dir\ /FS -c C:\Amirova_lab3_OPP\Amirova_qt6\editdialog.cpp
+<<
+
+CMakeFiles\Amirova_qt6.dir\editdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Amirova_qt6.dir/editdialog.cpp.i"
+	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe > CMakeFiles\Amirova_qt6.dir\editdialog.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Amirova_lab3_OPP\Amirova_qt6\editdialog.cpp
+<<
+
+CMakeFiles\Amirova_qt6.dir\editdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Amirova_qt6.dir/editdialog.cpp.s"
+	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1439~1.335\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Amirova_qt6.dir\editdialog.cpp.s /c C:\Amirova_lab3_OPP\Amirova_qt6\editdialog.cpp
+<<
+
 # Object files for target Amirova_qt6
 Amirova_qt6_OBJECTS = \
 "CMakeFiles\Amirova_qt6.dir\Amirova_qt6_autogen\mocs_compilation.cpp.obj" \
 "CMakeFiles\Amirova_qt6.dir\main.cpp.obj" \
 "CMakeFiles\Amirova_qt6.dir\mainwindow.cpp.obj" \
 "CMakeFiles\Amirova_qt6.dir\Amirova_Actor.cpp.obj" \
-"CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj" \
 "CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj" \
-"CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj"
+"CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj" \
+"CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj"
 
 # External object files for target Amirova_qt6
 Amirova_qt6_EXTERNAL_OBJECTS =
@@ -222,9 +222,9 @@ Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\Amirova_qt6_autogen\mocs_compilation
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\main.cpp.obj
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\mainwindow.cpp.obj
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\Amirova_Actor.cpp.obj
-Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\Amirova_Group.cpp.obj
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\Amirova_TheaterActor.cpp.obj
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\MyWidget.cpp.obj
+Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\editdialog.cpp.obj
 Amirova_qt6.exe: CMakeFiles\Amirova_qt6.dir\build.make
 Amirova_qt6.exe: C:\Qt\6.8.0\msvc2022_64\lib\Qt6Widgetsd.lib
 Amirova_qt6.exe: C:\Qt\6.8.0\msvc2022_64\lib\Qt6Guid.lib
