@@ -1,6 +1,6 @@
 #include "MyWidget.h"
 
-//BOOST_CLASS_EXPORT(Amirova_TheaterActor)
+BOOST_CLASS_EXPORT(Amirova_TheaterActor)
 
 using boost::archive::archive_flags;
 
@@ -10,7 +10,7 @@ MyWidget::MyWidget(QWidget *parent)
 }
 
 vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
-    std::cout << "aa" << flush;
+    //std::cout << "aa" << flush;
     // ищем ширину полей заголовка таблички
     vector<int> strLen(8);
     for (int i = 0; i < 8; ++i) strLen[i] = header[i].size();
@@ -36,7 +36,7 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
 
  void MyWidget::paintEvent(QPaintEvent *event) {
 
-    std::cout << "ff" << flush;
+    //std::cout << "ff" << flush;
     vector<QString> header {"Имя","Год рождения", "Пол", "Рост(м)", "Наличие вокальных данных (1-есть, 0 - нет)", "Город", "Театр", "Общий стаж работы в театре (лет)" };
 
     int startX = 0;
@@ -103,10 +103,8 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
 
  void MyWidget::load_from_file(QString LoadFileName) {
 
-     //std::cout << "ff" << flush;
      ifstream fin;
      fin.open(LoadFileName.toStdWString(), ios::in);
-
      if (fin.is_open()) {
          boost::archive::text_iarchive load(fin, archive_flags::no_header);
          load >> actors;
@@ -114,9 +112,9 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
  }
 
  void MyWidget::save_to_file(QString SaveFileName) {
+
      ofstream fout;
      fout.open(SaveFileName.toStdWString(), ios::out);
-
      if (fout.is_open()) {
          boost::archive::text_oarchive write(fout, archive_flags::no_header);
          write << actors;

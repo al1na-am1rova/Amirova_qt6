@@ -3,7 +3,6 @@
 
 #pragma once
 
-//#include "Amirova_Group.h"
 #include "Amirova_Actor.h"
 #include "Amirova_TheaterActor.h"
 #include <QMainWindow>

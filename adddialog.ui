@@ -341,46 +341,17 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QRadioButton" name="actor_rb">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>91</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>актера</string>
-   </property>
-   <property name="checked">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="theater_rb">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>40</y>
-     <width>121</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>актера театра</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>10</y>
+     <y>30</y>
      <width>151</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Добавить нового</string>
+    <string/>
    </property>
   </widget>
  </widget>

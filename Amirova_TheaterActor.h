@@ -19,8 +19,6 @@ public:
 	Amirova_TheaterActor() {}
 	~Amirova_TheaterActor() override {}
 
-    // void create(istream& in) override;
-    // void show(ostream& out) override;
     vector<int> get_fields_length() override;
     void show_actor_on_screen(QPainter& painter, QPoint& point, vector<int> strLen, int lineHeight, int startX, int multiplier) override;
     string get_type() override;

@@ -120,9 +120,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1010</x>
+     <x>950</x>
      <y>630</y>
-     <width>121</width>
+     <width>181</width>
      <height>31</height>
     </rect>
    </property>
@@ -130,20 +130,20 @@
     <string>Закрыть </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="add_button">
+  <widget class="QPushButton" name="add_actor_button">
    <property name="enabled">
     <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>1010</x>
+     <x>950</x>
      <y>580</y>
-     <width>121</width>
+     <width>181</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Добавить</string>
+    <string>Добавить актера</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="name_line">
@@ -159,7 +159,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="year_line">
@@ -175,7 +175,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="gender_line">
@@ -191,7 +191,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="height_line">
@@ -207,7 +207,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="sing_line">
@@ -223,7 +223,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="city_line">
@@ -239,7 +239,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="theater_line">
@@ -255,7 +255,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="experience_line">
@@ -271,7 +271,7 @@
     </rect>
    </property>
    <property name="readOnly">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="name_label">
@@ -408,9 +408,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1010</x>
-     <y>530</y>
-     <width>121</width>
+     <x>950</x>
+     <y>480</y>
+     <width>181</width>
      <height>29</height>
     </rect>
    </property>
@@ -418,20 +418,17 @@
     <string>Удалить</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="edit_button">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
+  <widget class="QPushButton" name="add_theater_actor_button">
    <property name="geometry">
     <rect>
-     <x>1010</x>
-     <y>480</y>
-     <width>121</width>
+     <x>950</x>
+     <y>530</y>
+     <width>181</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Редактировать</string>
+    <string>Добавить актера театра</string>
    </property>
   </widget>
  </widget>

@@ -7,7 +7,6 @@
 #include "editdialog.h"
 #include <QScrollArea>
 #include <sstream>
-//#include <QLayout>
 #include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -30,7 +29,6 @@ void MainWindow:: resizeEvent(QResizeEvent *event) {
 
 void MainWindow::on_load_from_file_triggered() {
 
-    //std::cout << "ff" << flush;
     LoadFileName = QFileDialog::getOpenFileName(this, tr("Открыть"), QDir::currentPath(), tr("Текст (*.txt)"));
     ui -> MyNewWidget -> load_from_file(LoadFileName);
     update();
@@ -63,14 +61,15 @@ void MainWindow::on_edit_triggered() {
 
     std::vector<shared_ptr<Amirova_Actor>> actors;
     clone(ui->MyNewWidget->actors, actors);
-    EditDialog* dlg = new EditDialog(this, {actors, ui->MyNewWidget->width(), ui->MyNewWidget->height()});
+    EditDialog::Data data = {actors};
+    //EditDialog* dlg = new EditDialog(this, {actors, ui->MyNewWidget->width(), ui->MyNewWidget->height()});
+    EditDialog* dlg = new EditDialog(this, data);
     dlg->show();
 
     if (dlg -> exec() == QDialog::Accepted)
     {
-        clone(actors, ui->MyNewWidget->actors);
+        clone(dlg->data.actors, ui->MyNewWidget->actors);
         ui->MyNewWidget->update();
-        delete dlg;
     }
-
+    delete dlg;
 }
