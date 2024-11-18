@@ -129,6 +129,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+   </property>
    <property name="readOnly">
     <bool>false</bool>
    </property>
@@ -176,6 +179,9 @@
      <width>191</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>
@@ -273,6 +279,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+   </property>
    <property name="readOnly">
     <bool>false</bool>
    </property>
@@ -336,6 +345,9 @@
      <width>191</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>

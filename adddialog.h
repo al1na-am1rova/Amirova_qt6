@@ -16,12 +16,10 @@ class AddDialog : public QDialog
 
 public:
 
-    //vector<shared_ptr<Amirova_Actor>> actors;
     explicit AddDialog(QWidget *parent, bool is_theater_actor);
     ~AddDialog();
 
     bool is_theater_actor;
-    //shared_ptr<Amirova_Actor> actor;
     Amirova_Actor actor;
     Amirova_TheaterActor theater_actor;
 

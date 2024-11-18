@@ -10,7 +10,6 @@ MyWidget::MyWidget(QWidget *parent)
 }
 
 vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
-    //std::cout << "aa" << flush;
     // ищем ширину полей заголовка таблички
     vector<int> strLen(8);
     for (int i = 0; i < 8; ++i) strLen[i] = header[i].size();
@@ -36,7 +35,6 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
 
  void MyWidget::paintEvent(QPaintEvent *event) {
 
-    //std::cout << "ff" << flush;
     vector<QString> header {"Имя","Год рождения", "Пол", "Рост(м)", "Наличие вокальных данных (1-есть, 0 - нет)", "Город", "Театр", "Общий стаж работы в театре (лет)" };
 
     int startX = 0;
@@ -93,8 +91,10 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
         point.setX(startX);
         point.setY(top);
 
-        std::for_each(actors.begin(), actors.end(), std::bind(&Amirova_Actor::show_actor_on_screen,std::placeholders::_1,ref(painter), ref(point), strLen, lineHeight, startX, multiplier));
-
+        //std::for_each(actors.begin(), actors.end(), std::bind(&Amirova_Actor::show_actor_on_screen,std::placeholders::_1,ref(painter), ref(point), strLen, lineHeight, startX, multiplier));
+        std::for_each(actors.begin(), actors.end(), [&painter, &point, strLen, lineHeight, startX, multiplier](const auto& actor) {
+            (*actor).show_actor_on_screen(painter, point, strLen, lineHeight, startX, multiplier);
+        });
         // Устанавливаем минимальные размеры виджета
         setMinimumSize(totalWidth, totalHeight);
         setGeometry(geometry().x(), geometry().y(), totalWidth, totalHeight);

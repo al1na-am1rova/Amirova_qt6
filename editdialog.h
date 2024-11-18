@@ -16,12 +16,12 @@ class EditDialog : public QDialog
     Q_OBJECT
 
 public:
-    struct Data
-    {
-        std::vector <shared_ptr<Amirova_Actor>> actors;
-    } data;
-
-    explicit EditDialog(QWidget *parent,Data &data);
+    // struct Data
+    // {
+    //     std::vector <shared_ptr<Amirova_Actor>> actors;
+    // } data;
+    std::vector <shared_ptr<Amirova_Actor>> actors;
+    explicit EditDialog(QWidget *parent,vector<shared_ptr<Amirova_Actor>>& actors);
     ~EditDialog();
 
 private:

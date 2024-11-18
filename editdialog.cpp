@@ -2,20 +2,18 @@
 #include "ui_editdialog.h"
 #include <sstream>
 
-EditDialog::EditDialog(QWidget *parent,Data& data)
+EditDialog::EditDialog(QWidget *parent, vector<shared_ptr<Amirova_Actor>>& actors)
     : QDialog(parent)
-    , data(data)
+    , actors(actors)
     , ui(new Ui::EditDialog)
 {
     ui->setupUi(this);
-    //ui->checkBox->setChecked(data.labels);
-    for(auto actor: data.actors)
+
+    for(auto actor: actors)
     {
         ui->listWidget->addItem(QString::fromLocal8Bit(actor -> name));
     }
     ui->listWidget->setCurrentRow(0);
-    // ui->sliderH->setValue(data.h);
-    // ui->sliderW->setValue(data.w);
     updateControls();
 }
 
@@ -31,11 +29,11 @@ void EditDialog::on_listWidget_currentRowChanged(int currentRow)
 
 void EditDialog::updateControls()
 {
-    bool show = !data.actors.empty();
+    bool show = !actors.empty();
 
     //список НЕ пустой
     if (show) {
-        shared_ptr<Amirova_Actor> current_actor = data.actors[ui->listWidget->currentRow()];
+        shared_ptr<Amirova_Actor> current_actor = actors[ui->listWidget->currentRow()];
         ui->name_line->setText(QString::fromLocal8Bit(current_actor->name));
         ui->year_line->setText(QString::number(current_actor->birth_year));
         ui->gender_line->setText(QString::fromLocal8Bit(current_actor->gender));
@@ -145,9 +143,9 @@ void EditDialog::on_add_actor_button_clicked()
 
     if (add_dlg -> exec() == QDialog::Accepted) {
        shared_ptr<Amirova_Actor> new_actor = make_shared<Amirova_Actor>(add_dlg->actor);
-       data.actors.push_back(new_actor);
+       actors.push_back(new_actor);
        ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
-       ui->listWidget->setCurrentRow(data.actors.size()-1);
+       ui->listWidget->setCurrentRow(actors.size()-1);
        updateControls();
     }
     delete add_dlg;
@@ -161,9 +159,9 @@ void EditDialog::on_add_theater_actor_button_clicked()
 
     if (add_dlg -> exec() == QDialog::Accepted) {
         shared_ptr<Amirova_TheaterActor> new_actor = make_shared<Amirova_TheaterActor>(add_dlg->theater_actor);
-        data.actors.push_back(new_actor);
+        actors.push_back(new_actor);
         ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
-        ui->listWidget->setCurrentRow(data.actors.size()-1);
+        ui->listWidget->setCurrentRow(actors.size()-1);
         updateControls();
     }
     delete add_dlg;
@@ -172,14 +170,13 @@ void EditDialog::on_add_theater_actor_button_clicked()
 
 void EditDialog::on_delete_button_clicked()
 {
-    //не работает удаление НЕ последнего элемента элемента, установка current row после удаления
     int currentRow = ui->listWidget->currentRow();
     if(currentRow < 0)
         return;
     delete ui->listWidget->takeItem(currentRow);
-    data.actors.erase(data.actors.begin() + currentRow);
-    if (currentRow < data.actors.size()) ui->listWidget->setCurrentRow(currentRow);
-    else ui->listWidget->setCurrentRow( data.actors.size()-1);
+    actors.erase(actors.begin() + currentRow);
+    if (currentRow < actors.size()) ui->listWidget->setCurrentRow(currentRow);
+    else ui->listWidget->setCurrentRow( actors.size()-1);
     updateControls();
 }
 
@@ -188,51 +185,51 @@ void EditDialog::on_delete_button_clicked()
 void EditDialog::on_name_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->name = (ui -> name_line -> text()).QString::toLocal8Bit();
+    actors[current_row]->name = (ui -> name_line -> text()).QString::toLocal8Bit();
     delete ui->listWidget->takeItem(current_row);
-    ui->listWidget->insertItem(current_row,QString::fromLocal8Bit(data.actors[current_row] -> name));
+    ui->listWidget->insertItem(current_row,QString::fromLocal8Bit(actors[current_row] -> name));
 }
 
 
 void EditDialog::on_year_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->birth_year = (ui -> year_line -> text()).QString::toInt();
+    actors[current_row]->birth_year = (ui -> year_line -> text()).QString::toInt();
 }
 
 
 void EditDialog::on_gender_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->gender = (ui -> gender_line -> text()).QString::toLocal8Bit();
+    actors[current_row]->gender = (ui -> gender_line -> text()).QString::toLocal8Bit();
 }
 
 
 void EditDialog::on_height_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->height = (ui -> height_line -> text()).QString::toDouble();
+    actors[current_row]->height = (ui -> height_line -> text()).QString::toDouble();
 }
 
 
 void EditDialog::on_sing_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->is_able_to_sing = (ui -> sing_line -> text()).QString::toInt();
+    actors[current_row]->is_able_to_sing = (ui -> sing_line -> text()).QString::toInt();
 }
 
 
 void EditDialog::on_city_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    data.actors[current_row]->city = (ui -> city_line -> text()).QString::toLocal8Bit();
+    actors[current_row]->city = (ui -> city_line -> text()).QString::toLocal8Bit();
 }
 
 
 void EditDialog::on_theater_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    if (auto theaterActor = std::dynamic_pointer_cast<Amirova_TheaterActor>(data.actors[current_row])) {
+    if (auto theaterActor = std::dynamic_pointer_cast<Amirova_TheaterActor>(actors[current_row])) {
         theaterActor->theater_name = (ui -> theater_line -> text()).QString::toLocal8Bit();
     }
 }
@@ -241,7 +238,7 @@ void EditDialog::on_theater_line_editingFinished()
 void EditDialog::on_experience_line_editingFinished()
 {
     int current_row = ui -> listWidget ->currentRow();
-    if (auto theaterActor = std::dynamic_pointer_cast<Amirova_TheaterActor>(data.actors[current_row])) {
+    if (auto theaterActor = std::dynamic_pointer_cast<Amirova_TheaterActor>(actors[current_row])) {
         theaterActor->experience = (ui -> experience_line -> text()).QString::toInt();
     }
 }

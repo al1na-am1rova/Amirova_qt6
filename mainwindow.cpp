@@ -61,14 +61,13 @@ void MainWindow::on_edit_triggered() {
 
     std::vector<shared_ptr<Amirova_Actor>> actors;
     clone(ui->MyNewWidget->actors, actors);
-    EditDialog::Data data = {actors};
-    //EditDialog* dlg = new EditDialog(this, {actors, ui->MyNewWidget->width(), ui->MyNewWidget->height()});
-    EditDialog* dlg = new EditDialog(this, data);
+    //EditDialog::Data data = {actors};
+    EditDialog* dlg = new EditDialog(this, actors);
     dlg->show();
 
     if (dlg -> exec() == QDialog::Accepted)
     {
-        clone(dlg->data.actors, ui->MyNewWidget->actors);
+        clone(dlg->actors, ui->MyNewWidget->actors);
         ui->MyNewWidget->update();
     }
     delete dlg;
