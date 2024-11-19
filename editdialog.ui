@@ -127,7 +127,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Закрыть </string>
+    <string>Закрыть</string>
    </property>
   </widget>
   <widget class="QPushButton" name="add_actor_button">
@@ -175,7 +175,7 @@
     </rect>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+    <set>Qt::InputMethodHint::ImhNone</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>
@@ -210,7 +210,7 @@
     </rect>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+    <set>Qt::InputMethodHint::ImhNone</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>
@@ -229,7 +229,7 @@
     </rect>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+    <set>Qt::InputMethodHint::ImhNone</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>
@@ -280,7 +280,7 @@
     </rect>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+    <set>Qt::InputMethodHint::ImhNone</set>
    </property>
    <property name="readOnly">
     <bool>false</bool>

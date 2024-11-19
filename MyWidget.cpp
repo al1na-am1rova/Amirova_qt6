@@ -114,7 +114,7 @@ vector<int> MyWidget::count_str_len(vector<QString> header, int sideSpace) {
  void MyWidget::save_to_file(QString SaveFileName) {
 
      ofstream fout;
-     fout.open(SaveFileName.toStdWString(), ios::out);
+     fout.open(SaveFileName.toStdWString(), std::ios::out);
      if (fout.is_open()) {
          boost::archive::text_oarchive write(fout, archive_flags::no_header);
          write << actors;

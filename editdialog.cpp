@@ -9,10 +9,9 @@ EditDialog::EditDialog(QWidget *parent, vector<shared_ptr<Amirova_Actor>>& actor
 {
     ui->setupUi(this);
 
-    for(auto actor: actors)
-    {
-        ui->listWidget->addItem(QString::fromLocal8Bit(actor -> name));
-    }
+    std::for_each(actors.begin(), actors.end(), [this](auto actor) {ui->listWidget->addItem(QString::fromLocal8Bit(actor->name));});
+
+    //for(auto actor: actors) ui->listWidget->addItem(QString::fromLocal8Bit(actor -> name));
     ui->listWidget->setCurrentRow(0);
     updateControls();
 }
@@ -138,33 +137,66 @@ void EditDialog::on_close_button_clicked()
 void EditDialog::on_add_actor_button_clicked()
 {
 
-   AddDialog* add_dlg = new AddDialog(this, false);
-   add_dlg->show();
+   // AddDialog* add_dlg = new AddDialog(this, false);
+   // add_dlg->show();
 
-    if (add_dlg -> exec() == QDialog::Accepted) {
-       shared_ptr<Amirova_Actor> new_actor = make_shared<Amirova_Actor>(add_dlg->actor);
-       actors.push_back(new_actor);
-       ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
-       ui->listWidget->setCurrentRow(actors.size()-1);
-       updateControls();
-    }
-    delete add_dlg;
+   //  if (add_dlg -> exec() == QDialog::Accepted) {
+   //     shared_ptr<Amirova_Actor> new_actor = make_shared<Amirova_Actor>(add_dlg->actor);
+   //     actors.push_back(new_actor);
+   //     ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
+   //     ui->listWidget->setCurrentRow(actors.size()-1);
+   //     updateControls();
+   //  }
+   //  delete add_dlg;
+
+    shared_ptr<Amirova_Actor> new_actor = make_shared<Amirova_Actor>();
+    QString n =  "Новый актер";
+    new_actor->name = n.QString::toLocal8Bit();
+
+    actors.push_back(new_actor);
+    ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
+    ui->listWidget->setCurrentRow(actors.size()-1);
+
+    ui->year_line->clear();
+    ui->gender_line->clear();
+    ui->height_line->clear();
+    ui->sing_line->clear();
+    ui->city_line->clear();
+    ui->theater_line->clear();
+    ui->experience_line->clear();
 
 }
 
 void EditDialog::on_add_theater_actor_button_clicked()
 {
-    AddDialog* add_dlg = new AddDialog(this, true);
-    add_dlg->show();
+    // AddDialog* add_dlg = new AddDialog(this, true);
+    // add_dlg->show();
 
-    if (add_dlg -> exec() == QDialog::Accepted) {
-        shared_ptr<Amirova_TheaterActor> new_actor = make_shared<Amirova_TheaterActor>(add_dlg->theater_actor);
-        actors.push_back(new_actor);
-        ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
-        ui->listWidget->setCurrentRow(actors.size()-1);
-        updateControls();
-    }
-    delete add_dlg;
+    // if (add_dlg -> exec() == QDialog::Accepted) {
+    //     shared_ptr<Amirova_TheaterActor> new_actor = make_shared<Amirova_TheaterActor>(add_dlg->theater_actor);
+    //     actors.push_back(new_actor);
+    //     ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
+    //     ui->listWidget->setCurrentRow(actors.size()-1);
+    //     updateControls();
+    // }
+    // delete add_dlg;
+
+    //Amirova_TheaterActor new_actor;
+    shared_ptr<Amirova_TheaterActor> new_actor = make_shared<Amirova_TheaterActor>();
+    QString n =  "Новый актер театра";
+    new_actor->name = n.QString::toLocal8Bit();
+    actors.push_back(new_actor);
+    ui->listWidget->addItem(QString::fromLocal8Bit(new_actor -> name));
+    ui->listWidget->setCurrentRow(actors.size()-1);
+
+    ui->year_line->clear();
+    ui->gender_line->clear();
+    ui->height_line->clear();
+    ui->sing_line->clear();
+    ui->city_line->clear();
+    ui->theater_line->clear();
+    ui->experience_line->clear();
+
 }
 
 
@@ -175,8 +207,8 @@ void EditDialog::on_delete_button_clicked()
         return;
     delete ui->listWidget->takeItem(currentRow);
     actors.erase(actors.begin() + currentRow);
-    if (currentRow < actors.size()) ui->listWidget->setCurrentRow(currentRow);
-    else ui->listWidget->setCurrentRow( actors.size()-1);
+    if (currentRow < actors.size() && !actors.empty()) ui->listWidget->setCurrentRow(currentRow);
+    else if (!actors.empty()) ui->listWidget->setCurrentRow(actors.size()-1);
     updateControls();
 }
 
